@@ -1,11 +1,535 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="ร้านเจตหมูสด จำหน่ายเนื้อหมูสดคุณภาพสูง สด สะอาด ปลอดภัย ไร้สารเร่งเนื้อแดง คัดพิเศษส่งตรงจากฟาร์มทุกวัน ขายปลีกและขายส่งในราคามิตรภาพ">
+    <meta name="keywords"
+        content="เจตหมูสด, ขายเนื้อหมู, หมูสามชั้น, สันคอหมู, ซี่โครงหมู, หมูบด, หมูสดกรุงเทพ, หมูสดราคาถูก">
+    <meta name="author" content="ร้านเจตหมูสด">
+    <title>ร้านเจตหมูสด | เนื้อหมูสดคุณภาพดี ส่งตรงจากฟาร์มทุกวัน สด สะอาด ถูกหลักอนามัย</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    ร้านหมูสด
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home" id="brand-logo">
+                <i class="bi bi-shop"></i> ร้านเจตหมูสด
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" id="nav-link-home">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features" id="nav-link-features">จุดเด่นของเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products" id="nav-link-products">รายการเนื้อหมู</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#calculator" id="nav-link-calculator">คำนวณราคาบิล</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" id="nav-link-about">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id="nav-link-contact">ติดต่อเรา</a>
+                    </li>
+                </ul>
+                <a href="#calculator" class="btn btn-primary-custom ms-lg-3" id="btn-quote-nav">คำนวณราคา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <span class="hero-badge"><i class="bi bi-patch-check-fill"></i> เนื้อหมูเกรดพรีเมียม สดสะอาด
+                        100%</span>
+                    <h1 class="hero-title">ยินดีต้อนรับสู่ <br><span>ร้านเจตหมูสด</span></h1>
+                    <p class="hero-desc">เราคัดสรรเนื้อหมูคุณภาพดีที่สุด สดใหม่ส่งตรงจากฟาร์มมาตรฐานทุกวัน
+                        ผ่านการชำแหละและดูแลภายใต้เกณฑ์สุขอนามัยที่เข้มงวด ปราศจากสารเร่งเนื้อแดง
+                        มั่นใจได้ในความอร่อยและปลอดภัยในทุกมื้ออาหารของคุณ</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="#products" class="btn btn-primary-custom btn-lg"
+                            id="hero-btn-products">ดูรายการสินค้า</a>
+                        <a href="#contact" class="btn btn-secondary-custom btn-lg"
+                            id="hero-btn-contact">ช่องทางการติดต่อ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding bg-light-custom">
+        <div class="container text-center">
+            <span class="section-tag">ทำไมต้องเลือกเรา</span>
+            <h2 class="section-title">มาตรฐานร้านเจตหมูสด</h2>
+            <p class="section-subtitle">เรามุ่งมั่นให้บริการเนื้อหมูคุณภาพที่ดีที่สุดแก่ผู้บริโภค ด้วยหลัก 4
+                ประการที่ทำให้ลูกค้าไว้วางใจเรามาอย่างยาวนาน</p>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card scroll-reveal">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+                        <h3 class="feature-title">สดใหม่ทุกวัน</h3>
+                        <p class="feature-desc">เนื้อหมูเข้าใหม่จากฟาร์มทุกเช้าตรู่ ไม่มีค้างคืน สีสวยธรรมชาติ
+                            ไม่ใส่สารกันบูด</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card scroll-reveal">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3 class="feature-title">สะอาด ปลอดสาร</h3>
+                        <p class="feature-desc">ได้รับมาตรฐานความสะอาด ปลอดสารเร่งเนื้อแดงและสารเคมีตกค้าง 100%</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card scroll-reveal">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-tags"></i>
+                        </div>
+                        <h3 class="feature-title">ราคาปลีก - ส่ง</h3>
+                        <p class="feature-desc">ขายในราคาที่เป็นกันเอง ซื้อไปทำอาหารก็คุ้ม
+                            ซื้อไปขายต่อหรือทำร้านอาหารก็ได้กำไร</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card scroll-reveal">
+                        <div class="feature-icon-wrapper">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h3 class="feature-title">จัดส่งรวดเร็ว</h3>
+                        <p class="feature-desc">มีบริการจัดส่งด่วนในพื้นที่และปริมณฑล ด้วยรถควบคุมอุณหภูมิ
+                            รักษาความสดจนถึงมือคุณ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="products" class="section-padding">
+        <div class="container text-center">
+            <span class="section-tag">รายการสินค้า</span>
+            <h2 class="section-title">เนื้อหมูสดคัดพิเศษ</h2>
+            <p class="section-subtitle">เลือกช้อปเนื้อหมูส่วนต่างๆ ที่คุณต้องการ สด สะอาด หั่นแต่งสวยงามพร้อมปรุง</p>
+
+            <!-- Search & Filter Box -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-8">
+                    <div class="search-box-wrapper">
+                        <i class="bi bi-search"></i>
+                        <input type="text" id="search-input" placeholder="ค้นหาเนื้อหมู เช่น สามชั้น, สันคอ, หมูบด...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-btn-group">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="fresh">เนื้อหมูสด</button>
+                <button class="filter-btn" data-filter="processed">หมูบดและแปรรูป</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4 text-start" id="product-catalog">
+                <!-- สินค้าจะถูก Render ผ่าน JavaScript (app.js) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Calculator Section -->
+    <section id="calculator" class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">วางแผนค่าใช้จ่าย</span>
+                <h2 class="section-title">เครื่องคำนวณราคาสั่งซื้อ</h2>
+                <p class="section-subtitle">กดเลือกจำนวนเนื้อหมูที่ต้องการด้านบน ระบบจะรวมยอดและคิดค่าส่งให้อัตโนมัติ
+                    พร้อมส่งใบสั่งซื้อเข้า LINE ร้านได้ทันที</p>
+            </div>
+
+            <div class="row justify-content-center mt-5" id="order-calculator-section">
+                <div class="col-lg-9">
+                    <div class="calculator-box">
+                        <h4 class="mb-4 pb-3 border-bottom"><i class="bi bi-receipt text-danger me-2"></i>
+                            สรุปบิลสั่งซื้อของคุณ</h4>
+
+                        <!-- List of selected items -->
+                        <div id="calc-items-list">
+                            <!-- จะอัปเดตผ่าน JS เมื่อผู้ใช้บวกลบรายการสินค้า -->
+                        </div>
+
+                        <!-- Summary pricing -->
+                        <div class="total-summary-card">
+                            <div class="summary-row">
+                                <span>จำนวนสินค้าที่สั่งซื้อ:</span>
+                                <span id="total-items-qty" class="fw-bold">0 กิโลกรัม</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>ราคารวมสินค้า:</span>
+                                <span id="subtotal-price" class="fw-bold">฿0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>ค่าบริการจัดส่ง:</span>
+                                <span id="delivery-fee" class="fw-bold">คำนวณตามระยะทาง</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>ยอดชำระสุทธิ:</span>
+                                <span id="grand-total-price">฿0</span>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4 d-flex align-items-center gap-3 border-0 rounded-4"
+                            style="background-color: rgba(13, 110, 253, 0.08); color: #084298;">
+                            <i class="bi bi-info-circle-fill fs-4 flex-shrink-0"></i>
+                            <div>
+                                <strong>โปรโมชันพิเศษ!</strong> สั่งซื้อเนื้อหมูครบ 500 บาทขึ้นไป
+                                บริการจัดส่งฟรีถึงหน้าบ้านคุณ (ระยะทางไม่เกิน 10 กม. จากร้าน)
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mt-2">
+                            <div class="col-md-6 mt-0">
+                                <button class="btn-line-order w-100" id="btn-send-line" onclick="sendOrderToLine()">
+                                    <i class="bi bi-line fs-4"></i> ส่งใบสั่งซื้อเข้า LINE
+                                </button>
+                            </div>
+                            <div class="col-md-6 mt-0">
+                                <button class="btn-telegram-order w-100" id="btn-send-telegram"
+                                    onclick="sendOrderToTelegram()">
+                                    <i class="bi bi-telegram fs-4"></i> ส่งใบสั่งซื้อเข้า Telegram
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-end mt-3">
+                            <a href="#" class="text-decoration-none text-muted small" data-bs-toggle="modal"
+                                data-bs-target="#telegramSettingsModal">
+                                <i class="bi bi-gear-fill me-1"></i> ตั้งค่า Telegram Bot สำหรับร้านค้า
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-img-box scroll-reveal">
+                        <img src="images/hero.png" alt="หน้าร้านเจตหมูสด" class="about-img-main">
+                        <div class="about-img-badge">
+                            <span class="years">10+</span>
+                            <span class="label">ปีแห่งความไว้วางใจ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="section-tag">เกี่ยวกับเรา</span>
+                    <h2 class="section-title text-start mb-4">เรื่องราวของ "ร้านเจตหมูสด"</h2>
+                    <p class="mb-4 text-muted" style="line-height: 1.8;">เริ่มต้นจากการเป็นร้านแผงขายหมูเล็กๆ
+                        ในตลาดท้องถิ่น ปัจจุบัน "ร้านเจตหมูสด"
+                        เติบโตสู่ผู้จัดจำหน่ายเนื้อหมูคุณภาพสูงทั้งปลีกและส่งที่ได้รับความไว้วางใจจากแม่บ้าน ร้านอาหาร
+                        และโรงเรียนมากมาย เราไม่เคยหยุดพัฒนามาตรฐานการจัดเก็บ การหั่นแต่ง
+                        และการขนส่งเพื่อรักษาความสดของเนื้อหมูให้ดีที่สุด</p>
+
+                    <ul class="about-list">
+                        <li><i class="bi bi-check-circle-fill"></i> คัดสรรจากฟาร์มระบบปิดมาตรฐานกรมปศุสัตว์</li>
+                        <li><i class="bi bi-check-circle-fill"></i> การันตีไม่มีสารเร่งเนื้อแดง ปลอดภัยต่อสุขภาพ</li>
+                        <li><i class="bi bi-check-circle-fill"></i> บริการเป็นกันเอง ใส่ใจความสะอาดทุกขั้นตอน</li>
+                        <li><i class="bi bi-check-circle-fill"></i> หั่น สไลด์ หรือบด ให้ตามใจลูกค้าต้องการ</li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-primary-custom" id="about-btn-contact">พูดคุยกับเรา</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding bg-light-custom">
+        <div class="container text-center">
+            <span class="section-tag">เสียงตอบรับจากลูกค้า</span>
+            <h2 class="section-title">รีวิวจากลูกค้าตัวจริง</h2>
+            <p class="section-subtitle">ความพึงพอใจของลูกค้าคือสิ่งสำคัญที่สุดของเรา
+                นี่คือเสียงยืนยันจากร้านค้าและแม่บ้านที่ใช้บริการจริง</p>
+
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="review-card scroll-reveal">
+                        <div class="review-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"หมูสามชั้นที่นี่สวยมากค่ะ สั่งไปทำหมูกรอบขายที่ร้าน ลูกค้าชอบมาก
+                            เนื้อเยอะมันกำลังดี ทางร้านจัดส่งตรงเวลาทุกเช้า สดใหม่ไม่เคยทำให้ผิดหวังเลยค่ะ"</p>
+                        <div class="review-user">
+                            <div class="review-avatar-placeholder">เจ</div>
+                            <div class="text-start">
+                                <h5 class="review-user-name">คุณเจ๊วรรณ</h5>
+                                <p class="review-user-status">เจ้าของร้านอาหารตามสั่ง</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card scroll-reveal">
+                        <div class="review-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"สะดวกมากครับ มีเว็บให้คำนวณราคาแล้วส่งเข้า LINE ได้เลย
+                            สันคอหมูที่นี่นุ่มมาก เอามาทำสเต็กหรือหมูกระทะก็อร่อย แม่ค้าพ่อค้าร้านนี้พูดจาดี
+                            บริการสะอาดประทับใจครับ"</p>
+                        <div class="review-user">
+                            <div class="review-avatar-placeholder">น</div>
+                            <div class="text-start">
+                                <h5 class="review-user-name">คุณนนทพัฒน์</h5>
+                                <p class="review-user-status">ลูกค้าประจำ (ครอบครัวใหญ่)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="review-card scroll-reveal">
+                        <div class="review-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">
+                            "เป็นโรงงานแปรรูปขนาดเล็กที่สั่งเนื้อหมูบดกับร้านเจตหมูสดวันละหลายสิบกิโลกรัม หมูบดเค้าสด
+                            สะอาด กลิ่นดี ไม่มีมันเยอะเกินไป ที่สำคัญราคาคุ้มค่ามาก ช่วยลดต้นทุนร้านเราได้เยอะเลยครับ"
+                        </p>
+                        <div class="review-user">
+                            <div class="review-avatar-placeholder">พ</div>
+                            <div class="text-start">
+                                <h5 class="review-user-name">คุณสมชาย</h5>
+                                <p class="review-user-status">ผู้ประกอบการแปรรูปอาหาร</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">ช่องทางการติดต่อ</span>
+                <h2 class="section-title">แวะมาหาเราหรือสั่งซื้อออนไลน์</h2>
+                <p class="section-subtitle">เรายินดีให้บริการทั้งหน้าร้าน และบริการสั่งซื้อผ่านออนไลน์จัดส่งถึงที่บ้าน
+                </p>
+            </div>
+
+            <div class="row g-4 mt-3">
+                <div class="col-lg-5">
+                    <div class="contact-info-card scroll-reveal">
+                        <h4 class="mb-4 fw-bold">ข้อมูลการติดต่อ</h4>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>ที่ตั้งหน้าร้าน</h5>
+                                    <p>แผงเลขที่ 12 โซนเนื้อสัตว์ ตลาดสดคลองเตย ถนนพระรามที่ 4 แขวงคลองเตย เขตคลองเตย
+                                        กรุงเทพมหานคร 10110</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>เบอร์โทรศัพท์สั่งของ</h5>
+                                    <p class="fw-bold fs-5 text-danger"><a href="tel:0891234567"
+                                            style="color: inherit; text-decoration: none;">089-123-4567</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-line text-success"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>LINE ID</h5>
+                                    <p class="fw-bold fs-5 text-success"><a href="https://line.me" target="_blank"
+                                            style="color: inherit; text-decoration: none;">@jadepork</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h5>เวลาเปิดทำการ</h5>
+                                    <p>เปิดบริการทุกวัน ตั้งแต่เวลา 03:00 น. - 18:00 น.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="map-wrapper scroll-reveal">
+                        <!-- Embedded Google Map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.10427303031!2d100.5562723!3d13.7121703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fa7ab708f51%3A0xc3b8606bf9f5358a!2z4LiV4Lil4Liy4LiU4LiE4Lil4Lit4LiH4LmA4LiV4Lii!5e0!3m2!1sth!2sth!4v1700000000000!5m2!1sth!2sth"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="#home" class="footer-brand"><i class="bi bi-shop"></i> ร้านเจตหมูสด</a>
+                    <p class="footer-desc">ผู้จัดจำหน่ายเนื้อหมูคุณภาพ สด สะอาด ปลอดภัย ราคาเป็นกันเอง
+                        ส่งตรงจากฟาร์มที่ได้มาตรฐานทุกวัน ยินดีให้บริการทั้งขายปลีกและขายส่ง</p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://line.me" class="social-icon" target="_blank" aria-label="Line"><i
+                                class="bi bi-line"></i></a>
+                        <a href="tel:0891234567" class="social-icon" aria-label="Phone"><i
+                                class="bi bi-telephone-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="footer-title">ลิงก์ด่วน</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">หน้าแรก</a></li>
+                        <li><a href="#features">จุดเด่นของเรา</a></li>
+                        <li><a href="#products">รายการเนื้อหมู</a></li>
+                        <li><a href="#calculator">คำนวณราคาสั่งซื้อ</a></li>
+                        <li><a href="#about">เกี่ยวกับเรา</a></li>
+                        <li><a href="#contact">ติดต่อสอบถาม</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h4 class="footer-title">ติดต่อเรา</h4>
+                    <ul class="list-unstyled text-light-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> แผงเลขที่ 12 ตลาดสดคลองเตย
+                            กรุงเทพฯ</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill text-danger me-2"></i> 089-123-4567</li>
+                        <li class="mb-2"><i class="bi bi-line text-success me-2"></i> LINE: @jadepork</li>
+                        <li class="mb-2"><i class="bi bi-clock-fill text-danger me-2"></i> ทุกวัน 03:00 - 18:00 น.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-bar">
+                <p class="mb-0">&copy; 2026 ร้านเจตหมูสด. All Rights Reserved. ออกแบบและพัฒนาเพื่อส่งต่อสุขอนามัยที่ดี
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Telegram Settings Modal -->
+    <div class="modal fade" id="telegramSettingsModal" tabindex="-1" aria-labelledby="telegramSettingsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="telegramSettingsModalLabel"><i
+                            class="bi bi-gear-fill text-primary me-2"></i> ตั้งค่า Telegram Bot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <p class="text-muted small">ระบุ Token และ Chat ID ของคุณ
+                        เพื่อให้หน้าเว็บส่งสรุปยอดคำนวณราคาสั่งซื้อไปยังบอต Telegram ของคุณได้โดยตรง</p>
+                    <div class="mb-3">
+                        <label for="tg-bot-token" class="form-label fw-semibold">Telegram Bot Token</label>
+                        <input type="text" class="form-control rounded-3" id="tg-bot-token"
+                            placeholder="ป้อน Bot Token เช่น 123456789:ABCdefGh...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tg-chat-id" class="form-label fw-semibold">Telegram Chat ID</label>
+                        <input type="text" class="form-control rounded-3" id="tg-chat-id"
+                            placeholder="ป้อน Chat ID เช่น -1001234567890 หรือ 987654321">
+                    </div>
+                    <div class="alert alert-warning small border-0 rounded-3 mb-0"
+                        style="background-color: rgba(255, 193, 7, 0.1); color: #664d03;">
+                        <i class="bi bi-info-circle-fill me-1"></i> <strong>ขั้นตอนสั้นๆ:</strong> สร้างบอตที่ <a
+                            href="https://t.me/BotFather" target="_blank" class="fw-bold">@BotFather</a> ดึง Token มาใส่
+                        จากนั้นนำบอตเข้าไปอยู่ในแชท/กลุ่มของคุณ และหาเลข Chat ID มากรอก
+                        ข้อมูลนี้จะเซฟในเบราว์เซอร์ของคุณเท่านั้น
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-light rounded-pill px-4"
+                        data-bs-dismiss="modal">ยกเลิก</button>
+                    <button type="button" class="btn btn-primary-custom rounded-pill px-4"
+                        onclick="saveTelegramSettings()">บันทึกการตั้งค่า</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Contact Buttons (FAB) -->
+    <div class="fab-container">
+        <a href="https://line.me" target="_blank" class="fab-btn fab-line" aria-label="ติดต่อ LINE ของทางร้าน">
+            <i class="bi bi-line"></i>
+        </a>
+        <a href="https://t.me/" target="_blank" class="fab-btn fab-telegram" id="fab-telegram-link"
+            aria-label="ติดต่อ Telegram ของทางร้าน">
+            <i class="bi bi-telegram"></i>
+        </a>
+        <a href="tel:0891234567" class="fab-btn fab-phone" aria-label="โทรติดต่อทางร้าน">
+            <i class="bi bi-telephone-fill"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap 5.3 Bundle JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
 </body>
+
 </html>
